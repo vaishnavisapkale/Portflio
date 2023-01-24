@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vaishnavi</title>
+</head>
+
+<body>
+
+    <!--Header section-->
+
+    <header id="header" class="d-none d-md-block">
+        <div id="btnshow" class="d-flex flex-column">
+            <div class="profile">
+                <img src="MyImage.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light" id="myname"> <a href="index.html"> Vaishnavi Sapkale</a></h1>
+                <div class="social-links mt-3 text-center d-none d-md-block" id="social">
+                    <a class="Email" href="mailto:sapkale.vaishnavi.dev@gmail.com"><i class="fa fa-envelope-o"
+                            aria-hidden="true"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/vaishnavi-sapkale-894315243"
+                        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!--Navigation menu-->
+
+            <nav class="nav-menu">
+                <ul>
+                    <li> <a href="index.html#home"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                    </li>
+                    <li><a href="index.html#about"><i class="fa fa-user" aria-hidden="true"></i><span>About
+                                Me</span></a></li>
+                    <li><a href="index.html#skills"><i class="fa fa-code" aria-hidden="true"></i><span>My
+                                Skills</span></a></li>
+                    <li><a href="index.html#projects"><i class="fa fa-laptop" aria-hidden="true"></i>
+                            <span>Projects</span></a></li>
+                    <li><a href="index.html#contact"><i class="fa fa-address-card"
+                                aria-hidden="true"></i><span>Contact</span></a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1VdxMtfEhjNpm_EdwMof_WtDLPBjFFsLy?usp=sharing"
+                            target="_blank"><i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Resume</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <button onclick="openFun()" class="mobile-nav-toggle d-md-none" type="button" data-toggle="collapse"
+        data-target="#header" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span><i class="fa fa-bars"></i></span>
+    </button>
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container">
+            <h1>Hello! </h1>
+            <h1>i'm Vaishnavi</h1>
+            <p>A <span style="color : rgb(108, 145, 255)">Full Stack Java </span> Developer</p>
+        </div>
+    </section>
+
+    <!--About Section-->
+
+    <div id="about" class="v-100">
+        <div id="mainabout">
+            <h1 id="heading"><span style="color: rgb(108, 145, 255)">About</span> Me</h1>
+            <p id="firstpara">
+                Hi,I am a <span style="color: rgb(108, 145, 255)"> <b> Full </b> </span> Stack <span
+                    style="color: rgb(108, 145, 255)"> <b>Java </b> </span> Developer.
+            </p>
+            <div id="para">
+                <p>
+                    I work with some of the popular frontend technologies to create beautiful
+                    websites according to your needs. <br>
+                    Also Working on Back-End Development and looking forward to be a successfull Full Stack Java
+                    Developer.<br>
+                    Currently pursuing Btech in computer Science.
+                </p>
+                <a href="vaishnavi_resume.pdf" download="vaishnavi_resume" class="button" target="blank" id="dwn"><i
+                        class="fa fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Skill Section-->
+
+
+    <div id="skills" class="v-100">
+        <div id="mainskill">
+            <h1 id="headingskill"> My <span style="color:  rgb(108, 145, 255)">Skills</span></h1>
+
+            <div class="row" id="mainprogrress">
+                <div class="col-md-6 com-sm-12" id="column1">
+
+                    <div class="progress-title">
+                        <h3>Java 8 / 11</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-title">
+                        <h3>Spring Boot</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-title">
+                        <h3>HTML</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-title">
+                        <h3>CSS</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-title">
+                        <h3>JavaScript</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-title">
+                        <h3>Bootstrap</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-title">
+                        <h3>React Js</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 com-sm-12" id="column2">
+                    <h2> <span style="color: rgb(108, 145, 255)"> Other </span>skills</h2>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>NetBeans</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Projects section-->
+
+
+    <div id="projects" class="v-100">
+        <div id="mainproject">
+            <h1 id="Headproject">Some <span style="color: rgb(108, 145, 255);">Projects</span></h1>
+            <!-- <p id="projectpara">
+                i haven't published any project yet, so this are some snapshots of my practice projects :
+            </p>
+            <div class="row" id="photos">
+                <div class="bothimg" class="col-md-3 col-sm-3 col-xs-12">
+                    <img alt="AltText" id="img1" src="images/projects1.png" class="img-responsive">
+                    <p><b> <span style="color: rgb(108, 145, 255)"> SoundBeam</span></b> : Headphones & their qualities
+                    </p>
+
+
+                </div>
+                <div class="bothimg" class="col-md-3 col-sm-3 col-xs-12">
+                    <img alt="AltText" id="img1" src="images/projects2.png" class="img-responsive">
+                    <p><b> <span style="color: rgb(108, 145, 255)"> Banking</span></b> : online services </p>
+
+                </div>
+                <div class="bothimg" class="col-md-3 col-sm-3 col-xs-12">
+                    <img alt="AltText" id="img1" src="images/projects3.png" class="img-responsive">
+                    <p> <b> <span style="color: rgb(108, 145, 255)"> BookHotel</span></b> : Room Booking </p>
+
+                </div>
+                <div class="bothimg" class="col-md-3 col-sm-3 col-xs-12">
+                    <img alt="AltText" id="img1" src="images/project4.png" class="img-responsive">
+                    <p><b> <span style="color: rgb(108, 145, 255)"> Rio</span></b> : A home in the city </p>
+
+                </div> -->
+
+                <div>
+                    BIKE RENTAL
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--contact section-->
+
+
+
+    <div id="contact" class="v-100">
+        <div id="maincontact">
+            <h1 id="headcontact"> Get <span style="color: rgb(108, 145, 255);">in</span> touch</h1>
+            <div class="row" id="getintouch">
+                <div class="col-md-6 col-12" id="visit">
+
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <p class="phon2"><strong>Mail</strong></p>
+                    <p><a id="mail" href="mailto: sapkale.vaishnavi.dev@gmail.com">sapkale.vaishnavi.dev@gmail.com</a>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <i class="fa fa-github  fa-2x" aria-hidden="true"></i>
+                    <p><strong>On Github</strong></p>
+                    <p><a href="https://github.com/vaishnavisapkale"> vaishnavisapkale</a> </p>
+                    <br>
+
+                </div>
+                <div class="col-md-6 col-12" id=last>
+                    <h3><b> Available for <span style="color: rgb(108, 145, 255);"> Remote </span> jobs</b> </h3>
+                </div>
+
+
+            </div>
+        </div>
+        <h6 style="margin-top:200px ;" class="text-center">Best View On 1920 X 1080 </h6>
+    </div>
+
+    </div>
+
+
+    <script>
+        function openFun() {
+            var x = document.getElementById('header');
+            x.classList.remove("d-none")
+            x.style.background = "rgba(34, 33, 30, 10)"
+            x.style.width = "200px"
+            document.getElementById('myname').style.textAlign = "center"
+            document.getElementById('social').style.width = '100px'
+            document.getElementById('social').style.marginLeft = "40px"
+            document.getElementById('social').style.padding = "5px"
+        }
+    </script>
+</body>
+
+</html>
