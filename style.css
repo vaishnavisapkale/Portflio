@@ -463,10 +463,11 @@ h6 {
     margin-bottom: 60px;
     width: 400px;
     height: 200px;
+    transition: transform 1s;
     
 }
 .bothimg:hover{
-    border: 2px solid rgba(0, 0, 255, 0.723);
+    transform: scale(1.1);
 }
 
 #img1 {
